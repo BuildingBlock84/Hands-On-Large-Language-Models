@@ -1,0 +1,42 @@
+name: rtx4070
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  # --- Core runtime ---
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - scikit-learn
+
+  # --- Deep learning / GPU stack ---
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1  # Match your RTX 4070 CUDA runtime
+
+  # --- Utilities ---
+  - tqdm
+  - jupyterlab
+  - ipykernel
+  - requests
+  - mkl
+  - intel-openmp
+
+  # --- Python packages from PyPI ---
+  - pip:
+      - transformers==4.57.1
+      - accelerate
+      - sentencepiece
+      - datasets
+      - evaluate
+      - huggingface_hub
+      - black
+      - isort
+      - ruff

@@ -29,6 +29,7 @@ dependencies:
   - mkl
   - intel-openmp
 
+
   # --- Python packages from PyPI ---
   - pip:
       - transformers==4.57.1
@@ -41,3 +42,4 @@ dependencies:
       - isort
       - ruff
       - protobuf
+       

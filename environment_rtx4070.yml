@@ -40,3 +40,4 @@ dependencies:
       - black
       - isort
       - ruff
+      - protobuf
